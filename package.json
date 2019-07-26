@@ -1,0 +1,24 @@
+{
+  "name": "action-reduction",
+  "version": "1.0.0",
+  "description": "Mini action to state reduction engine.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node --no-warnings --experimental-modules test.mjs",
+    "test": "node --no-warnings --experimental-modules test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/action-reduction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/action-reduction/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/action-reduction#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
