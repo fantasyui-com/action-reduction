@@ -4,7 +4,7 @@ import assert from 'assert';
 import program from './index.mjs';
 
 const state = {};
-const library = {
+const reducers = {
   initializeUsers: function(state, action){
     return Object.assign({},state,{users:{}});
   },
@@ -24,7 +24,7 @@ const actions = [
   {type: 'update-user', id:'alice', lastName:'Smith'},
 ];
 
-const actual = program({state, library, actions})
+const actual = program({state, reducers, actions})
 const expected = {
   users: {
     alice: {
