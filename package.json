@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "node --no-warnings --experimental-modules test.mjs",
-    "test": "node --no-warnings --experimental-modules test.mjs"
+    "test": "node --no-warnings --experimental-modules test.mjs",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fantasyui-com/action-reduction.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/action-reduction/issues"
